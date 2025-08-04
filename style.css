@@ -1,4 +1,4 @@
-/* ==================== GLOBAL STYLES & VARIABLES ==================== */
+/* Created By Shivam Sharma */
 [data-label] {
     position: relative;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -49,8 +49,8 @@
 }      
 
 :root {
-            --primary-color: #115bcb; /* Deep Purple */
-            --secondary-color: #d125fc; /* Bright Blue */
+            --primary-color: #115bcb;
+            --secondary-color: #d125fc;
             --text-light: #e0e0e0;
             --text-dark: #1a1a1a;
             --bg-dark: #121212;
@@ -58,8 +58,8 @@
             --card-bg: #1e1e1e;
             --border-color: #333;
             --gradient-1: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            --gradient-2: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%); /* Orange-Yellow */
-            --gradient-3: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%); /* Blue-Green */
+            --gradient-2: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+            --gradient-3: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
             --transition-speed: 0.4s;
             --font-poppins: 'Poppins', sans-serif;
             --font-montserrat: 'Montserrat', sans-serif;
@@ -69,6 +69,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            user-select: none;
         }
 
         html {
@@ -80,13 +81,13 @@
             color: var(--text-light);
             background: var(--bg-dark);
             line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; 
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            position: relative; /* For the animated background */
+            position: relative; 
         }
 
-        /* ==================== ANIMATED BACKGROUND ==================== */
+        
         body::before {
             content: '';
             position: fixed;
@@ -98,7 +99,7 @@
             background-size: 400% 400%;
             animation: gradientBackground 15s ease infinite;
             z-index: -1;
-            opacity: 0.7; /* Make it subtle */
+            opacity: 0.7; 
         }
 
         @keyframes gradientBackground {
@@ -107,7 +108,7 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* ==================== PRELOADER ==================== */
+        
         #preloader {
             position: fixed;
             top: 0;
@@ -121,7 +122,7 @@
             z-index: 9999;
             transition: opacity 0.8s ease-out;
             opacity: 1;
-            pointer-events: all; /* Allow interaction for fading out */
+            pointer-events: all; 
         }
 
         #preloader.hidden {
@@ -142,7 +143,7 @@
             to { transform: rotate(360deg); }
         }
 
-        /* ==================== TYPOGRAPHY & UTILITIES ==================== */
+        
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-montserrat);
             color: var(--text-light);
@@ -214,7 +215,7 @@
             padding: 100px 0;
         }
 
-        /* ==================== HEADER & NAVIGATION ==================== */
+        
         .header {
             position: fixed;
             top: 0;
@@ -227,10 +228,10 @@
         }
 
         .header.scrolled {
-            background: rgba(18, 18, 18, 0.95); /* Slightly darker, less transparent */
+            background: rgba(18, 18, 18, 0.95); 
             padding: 15px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(5px); /* Modern blur effect */
+            backdrop-filter: blur(5px); 
         }
 
         .nav-content {
@@ -276,7 +277,7 @@
             font-weight: 600;
             position: relative;
             transition: color var(--transition-speed) ease;
-            padding-bottom: 5px; /* For the underline effect */
+            padding-bottom: 5px; 
         }
 
         .nav-links a::after {
@@ -327,7 +328,7 @@
             transform: translateY(-10px) rotate(-45deg);
         }
 
-        /* ==================== HERO SECTION ==================== */
+        
         #hero {
             height: 100vh;
             display: flex;
@@ -361,15 +362,15 @@
             font-weight: 300;
         }
 
-        /* Typewriter effect styles */
+        
         .typewriter h1 {
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .15em; /* Adjust as needed */
+            overflow: hidden; 
+            white-space: nowrap; 
+            margin: 0 auto; 
+            letter-spacing: .15em; 
         }
         .typed-text {
-            border-right: .08em solid var(--primary-color); /* The typewriter cursor */
+            border-right: .08em solid var(--primary-color); 
             white-space: nowrap;
             overflow: hidden;
             animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
@@ -408,7 +409,7 @@
             60% { transform: translateY(-5px); }
         }
 
-        /* ==================== ABOUT SECTION ==================== */
+        
         #about {
             background: var(--card-bg);
             border-top: 1px solid var(--border-color);
@@ -464,7 +465,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* ==================== SKILLS SECTION ==================== */
+        
         #skills {
             background: var(--bg-dark);
         }
@@ -537,17 +538,17 @@
             display: block;
             height: 100%;
             background: var(--gradient-3);
-            width: 0%; /* Initial state for animation */
+            width: 0%; 
             transition: width 1.5s ease-out;
             border-radius: 5px;
         }
 
-        /* Classes to trigger animation */
+        
         .skill-card[data-aos-id="skill-progress"] .skill-progress {
             width: var(--progress-width, 0%);
         }
 
-        /* ==================== PROJECTS SECTION ==================== */
+        
         #projects {
             background: var(--card-bg);
             border-top: 1px solid var(--border-color);
@@ -617,7 +618,7 @@
             transform: translateY(-3px);
         }
 
-        /* Project Overlay Effect (Optional, for more interactive details) */
+        
         .project-overlay {
             position: absolute;
             top: 0;
@@ -631,7 +632,7 @@
             align-items: center;
             opacity: 0;
             transition: opacity 0.4s ease;
-            transform: translateY(100%); /* Start below */
+            transform: translateY(100%); 
             transition: opacity 0.4s ease, transform 0.4s ease;
             color: white;
             padding: 20px;
@@ -684,7 +685,7 @@
             margin-bottom: 20px;
         }
 
-        /* ==================== CONTACT SECTION ==================== */
+        
         #contact {
             background: var(--bg-dark);
             border-top: 1px solid var(--border-color);
@@ -716,7 +717,7 @@
             font-size: 1.5rem;
             color: var(--primary-color);
             margin-right: 15px;
-            width: 30px; /* Ensure consistent alignment */
+            width: 30px; 
         }
 
         .social-links {
@@ -788,7 +789,7 @@
             font-size: 1.1rem;
         }
 
-        /* ==================== FOOTER ==================== */
+        
         .footer {
             background: #1a1a1a;
             color: var(--text-light);
@@ -803,7 +804,7 @@
         }
 
 
-        /* ==================== SCROLL TO TOP BUTTON ==================== */
+        
         #scrollToTopBtn {
             display: none;
             position: fixed;
@@ -829,7 +830,7 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
         }
 
-        /* ==================== RESPONSIVE DESIGN ==================== */
+        
         @media (max-width: 992px) {
             h1 { font-size: 3rem; }
             h2 { font-size: 2rem; }
@@ -838,7 +839,7 @@
             .nav-links {
                 position: fixed;
                 top: 0;
-                right: -100%; /* Hidden by default */
+                right: -100%; 
                 width: 70%;
                 height: 100vh;
                 background: rgba(18, 18, 18, 0.98);
@@ -851,12 +852,12 @@
             }
 
             .nav-links.active {
-                right: 0; /* Show nav */
+                right: 0; 
             }
 
             .nav-links li {
                 margin: 20px 0;
-                opacity: 0; /* Start hidden for staggered animation */
+                opacity: 0; 
                 transform: translateX(50px);
                 transition: opacity 0.5s ease, transform 0.5s ease;
             }
@@ -881,10 +882,6 @@
             .hero-content p {
                 font-size: 1.2rem;
             }
-            .typed-text {
-                animation: none; /* Disable typing animation on small screens for faster display */
-                border-right: none;
-            }
 
             .about-content {
                 flex-direction: column;
@@ -894,7 +891,7 @@
             }
 
             .skill-card, .project-card, .contact-form {
-                margin: 0 10px; /* Add some horizontal padding */
+                margin: 0 10px; 
             }
         }
 
@@ -905,8 +902,8 @@
             h1 { font-size: 2.8rem; }
             h2 { font-size: 1.8rem; }
             .hero-content h1 {
-                font-size: 2.8rem;
-                min-height: 2.8rem;
+                font-size: 2.5rem;
+                min-height: 2.5rem;
             }
             .hero-content p {
                 font-size: 1rem;
@@ -929,9 +926,9 @@
             h1 { font-size: 2.2rem; }
             h2 { font-size: 1.6rem; }
             .hero-content h1 {
-                font-size: 2.5rem;
-                min-height: 2.5rem;
-                letter-spacing: .1em;
+                font-size: 2rem;
+                min-height: 2rem;
+                letter-spacing: auto;
             }
         }
 
@@ -945,4 +942,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
+
+/* © 2025  @ Shivam Sharma - https://shivamsharma999.github.io All rights reserved*/

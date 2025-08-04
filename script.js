@@ -16,8 +16,6 @@
             
             });}catch(e){'error'}
 
-            // Preloader
-
             // Header Scroll Effect
             const header = document.getElementById('header');
             window.addEventListener('scroll', () => {
@@ -181,10 +179,11 @@
 
             // Update current year in footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
-
-            console.clear();
-            console.log('%cShivam Sharma', 'background: linear-gradient(45deg, #121212, #2a005c, #001f3f, #121212);filter: blur(50px);color: transparent;background-clip: text;padding: 10px;font-size: 2rem;font-family: Georgia, "Times New Roman", Times, serif;text-shadow: 0 0 30px #ffffff60')
-        });
+           setTimeout(() => {
+                console.clear();
+            console.log('%cShivam Sharma', `position:absolute;z-index: 1;background: linear-gradient(45deg, #121212, #2a005c, #001f3f, #121212);filter: blur(50px);color: transparent;background-clip: text;padding: 10px;font-size: 2rem;font-family: Georgia, "Times New Roman", Times, serif;text-shadow: 0 0 30px #ffffff60;`)
+          }, 200) 
+          });
 
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
