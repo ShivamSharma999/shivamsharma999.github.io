@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sharma - Portfolio</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/source-code.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-content">
+            <a href="#" class="logo"><img draggable="false" src="slogo1.png" alt="Logo"> Shivam<span>Sharma</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section-padding">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                <p>Hello, I'm</p>
+                <h1 class="typewriter"><span class="typed-text"></span></h1>
+                <p>I build beautiful and functional web experiences.</p>
+                <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="600">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <a href="#about" data-label="Explore About me" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="shivam.jpg" alt="Shivam Sharma">
+                    </div>
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="500">
+                        <h3>Passionate Web Developer & Designer</h3>
+                        <p>I'm a dedicated web developer with a keen eye for design and a passion for creating engaging, user-friendly digital experiences. My journey in web development started with a curiosity for how websites work, which quickly evolved into a drive to build them myself.</p>
+                        <p>I specialize in front-end development, bringing designs to life with clean, efficient code and a strong emphasis on responsiveness and performance. I love tackling complex problems and continuously learning new technologies to stay at the forefront of the industry.</p>
+                        <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or enjoying a good book. I'm always eager to collaborate on exciting projects and bring innovative ideas to fruition!</p>
+                        <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="800">Let's Connect</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100" data-aos-id="skill-progress" data-progress="95">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3>HTML5</h3>
+                        <p>Semantic structuring and accessibility.</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 95%;"></span></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200" data-aos-id="skill-progress" data-progress="90">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h3>CSS3</h3>
+                        <p>Responsive design, animations, and modern layouts.</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 90%;"></span></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300" data-aos-id="skill-progress" data-progress="80">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive web applications and dynamic content.</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 80%;"></span></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400" data-aos-id="skill-progress" data-progress="70">
+                        <i class="fab fa-react skill-icon"></i>
+                        <h3>React.js</h3>
+                        <p>Building scalable and modular UI components.</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 70%;"></span></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="500" data-aos-id="skill-progress" data-progress="80">
+                        <i class="fab fa-node-js skill-icon"></i>
+                        <h3>Node.js</h3>
+                        <p>Server-side development and API creation.</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 80%;"></span></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="600" data-aos-id="skill-progress" data-progress="10">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3>Databases</h3>
+                        <p>Working with SQL (PostgreSQL) and NoSQL (MongoDB).</p>
+                        <div class="skill-progress-bar"><span class="skill-progress" style="--progress-width: 10%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2>My Recent Work</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="sanatan-ai.png" alt="Project 1: Sanatan AI">
+                        <div class="project-info">
+                            <h3>Sanatan AI</h3>
+                            <p>A fully functional AI powered chatbot built with JavaScript, HTML5, CSS and Node.js.</p>
+                            <div class="project-links">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fa-js fab"></i>
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <h1 class="rank"><span>1</span></h1>
+                            <h3>Sanatan AI</h3>
+                            <p>Implemented features like Image generation, Deep thinking, Voice assistant, Chat Responding. Focused on a smooth user experience and responsive design.More attractive because of presence of experience with Indian culture.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="regexo.png" alt="Project 2: Sanatan Regexo">
+                        <div class="project-info">
+                            <h3>Sanatan Regexo</h3>
+                            <p>A fully functioning regex explainer website showcasing front-end development skills with HTML, CSS and  JS</p>
+                            <div class="project-links">
+                                <i class="fab fa-html5"></i>
+                                <i class="fab fa-css3-alt"></i>
+                                <i class="fa-js fab"></i>
+                            </div>
+                        </div>
+                         <div class="project-overlay">
+                            <h1 class="rank"><span>2</span></h1>
+                            <h3>Sanatan Regexo</h3>
+                            <p>Designed and developed a dynamic regex analyser and explainer website with custom animations and a modern, minimalist aesthetic. Includes features like escape, save, copy, share, test, details and Explaination.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="comment.png" alt="Project 3: Task Manager App">
+                        <div class="project-info">
+                            <h3>Comment Remover</h3>
+                            <p>A functional Comment Remover application referring the backend development skills with React and Node.js</p>
+                            <div class="project-links">
+                                <i class="fab fa-node-js"></i>
+                                <i class="fab fa-react"></i>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <h1 class="rank"><span>3</span></h1>
+                            <h3>Comment Remover</h3>
+                            <p>A very good project for developers to remove comments from code to minify it. A clean and animated interference with essentiols like Undo, Redo and beautify.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                        <p><i class="fas fa-map-marker-alt"></i> Sikar, Rajasthan, India</p>
+                        <p><i class="fas fa-envelope"></i> shivam8299.sharma@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9983042812</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank" data-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/shivamsharma999" target="_blank" data-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" data-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" data-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="200">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Shivam Sharma. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" data-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shivamsharma999" target="_blank" data-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" data-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
