@@ -914,6 +914,9 @@
         }
 
         @media (max-width: 480px) {
+            body {
+                overflow: hidden;
+            }
             .container {
                 padding: 0 15px;
             }
