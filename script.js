@@ -5,7 +5,7 @@
                 preloader.classList.add('hidden');
             });
          try {
-            if(AOS)  AOS.init({
+            if(window.innerWidth > 700)  AOS.init({
                 offset: 100,
                 delay: 0,
                 duration: 800, 
