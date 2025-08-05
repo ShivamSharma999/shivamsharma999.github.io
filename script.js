@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
             const preloader = document.getElementById('preloader');
             window.addEventListener('load', () => {
@@ -15,7 +15,7 @@
                 anchorPlacement: 'top-bottom',
             
             });
-        else document.getElementById('aos-styles').remove();}catch(e){'error'}
+        }catch(e){'error'}
 
             // Header Scroll Effect
             const header = document.getElementById('header');

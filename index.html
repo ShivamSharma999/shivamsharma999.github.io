@@ -234,7 +234,23 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- AOS JS -->
+    <script>
+         if(!window.innerWidth > 700) {
+            document.getElementById('aos-styles').remove();
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+            document.querySelectorAll('[data-aos-delay]').forEach(el => {
+                el.removeAttribute('data-aos-delay');
+            });
+            document.querySelectorAll('[data-aos-duration]').forEach(el => {
+                el.removeAttribute('data-aos-duration');
+            });
+            document.querySelectorAll('[data-aos-easing]').forEach(el => {
+                el.removeAttribute('data-aos-easing');
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
