@@ -5,7 +5,7 @@
                 preloader.classList.add('hidden');
             });
          try {
-            if(AOS)  AOS.init({
+            if(window.innerWidth > 700)  AOS.init({
                 offset: 100,
                 delay: 0,
                 duration: 800, 
@@ -14,7 +14,8 @@
                 mirror: false, 
                 anchorPlacement: 'top-bottom',
             
-            });}catch(e){'error'}
+            });
+        else document.getElementById('aos-styles').remove();}catch(e){'error'}
 
             // Header Scroll Effect
             const header = document.getElementById('header');
@@ -88,15 +89,7 @@
                 }
             }
 
-            // Only start typewriter effect if on desktop (or wider screens)
-            if (window.innerWidth > 768) {
-                type();
-            } else {
-                // For smaller screens, just show the first name
-                typedTextSpan.textContent = textArray[0];
-                typedTextSpan.style.borderRight = 'none'; // Hide cursor
-                typedTextSpan.classList.remove("typed-text"); // Remove animation classes
-            }
+            type();
 
 
             // Mobile Menu Toggle

@@ -914,10 +914,6 @@
         }
 
         @media (max-width: 480px) {
-            body {
-                overflow: hidden;
-                max-width: 100vw;
-            }
             .container {
                 padding: 0 15px;
             }
@@ -947,5 +943,6 @@
     align-items: center;
     justify-content: center;
 }
+
 
 /* © 2025  @ Shivam Sharma - https://shivamsharma999.github.io All rights reserved*/
