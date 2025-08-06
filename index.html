@@ -235,7 +235,7 @@
     </button>
 
     <script>
-         if(!window.innerWidth > 700) {
+         if(window.innerWidth > 700) {
             document.getElementById('aos-styles').remove();
             document.querySelectorAll('[data-aos]').forEach(el => {
                 el.removeAttribute('data-aos');
@@ -250,10 +250,7 @@
                 el.removeAttribute('data-aos-easing');
             });
              alert('all clear')
-        }
-        else {
-            alert('Desktop device')
-        }
+         }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
