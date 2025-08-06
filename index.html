@@ -236,6 +236,7 @@
 
     <script>
          if(window.innerWidth > 700) {
+             try {
             document.getElementById('aos-styles').remove();
             document.querySelectorAll('[data-aos]').forEach(el => {
                 el.removeAttribute('data-aos');
@@ -249,6 +250,10 @@
             document.querySelectorAll('[data-aos-easing]').forEach(el => {
                 el.removeAttribute('data-aos-easing');
             });
+        }
+             catch(e) {
+                 alert('error')
+             }
              alert('all clear')
          }
     </script>
