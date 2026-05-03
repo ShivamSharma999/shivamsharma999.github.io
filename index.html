@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Sharma | Portfolio</title>
+    <link rel="stylesheet" href="css/Poppins/index.min.css" />
+    <link rel="stylesheet" href="css/fontawesome/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./js/lordicon.js"></script>
+  </head>
+  <body>
+    <div class="bg-abstract" aria-hidden="true"></div>
+
+    <div id="preloader">
+      <div class="loader" aria-hidden="true"></div>
+    </div>
+
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a class="logo" href="#home">
+          <img src="assets/logo.png" alt="Shivam Sharma" /> Shivam
+        </a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-container">
+          <div class="hero-content fade-up visible">
+            <p class="greeting">Hello, I'm</p>
+            <h1
+              class="name gradient-text type-writer"
+              aria-label="Animated introduction"
+            ></h1>
+            <p class="summary">
+              I build thoughtful web experiences with a strong eye for interface
+              design, interaction, and performance.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-large" href="#projects">
+                View My Work
+                <lord-icon
+                  src="./assets/icons/arrow.json"
+                  trigger="hover"
+                  target='.btn[href="#projects"]'
+                ></lord-icon>
+              </a>
+              <a class="btn btn-outline btn-large" href="#contact"
+                >Let's Connect</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <h2 class="section-title fade-up">
+            <span>About Me</span>
+            <span class="line"></span>
+          </h2>
+          <div class="about-grid">
+            <div class="image-wrapper about-image fade-up delay-1">
+              <img
+                src="assets/shivam.jpg"
+                alt="Portrait of Shivam Sharma"
+              />
+            </div>
+            <div class="about-text fade-up delay-2">
+              <p>
+                I'm a developer who enjoys turning ambitious ideas into
+                polished, usable products. My work leans on clean front-end
+                execution, strong interaction details, and practical problem
+                solving.
+              </p>
+              <p>
+                With a background in computer science and a passion for design,
+                I thrive at the intersection of form and function. I love
+                crafting interfaces that are not only visually appealing but also
+                intuitive and efficient to use.
+              </p>
+              <p>
+                I especially enjoy building tools and experiences that feel
+                modern, responsive, and genuinely helpful to the people using
+                them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title center fade-up">
+            <span class="line"></span>
+            <span>Skills</span>
+            <span class="line"></span>
+          </h2>
+          <div class="skills-container"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title fade-up">
+            <span>Featured Projects</span>
+            <span class="line"></span>
+          </h2>
+          <div class="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="center-flex col contact-container">
+          <h2 class="section-title contact-heading fade-up">
+            <span class="line"></span>Get In Touch<span class="line"></span>
+          </h2>
+          <p class="contact-desc fade-up delay-1">
+            I like building things that are useful, expressive, and easy to use.
+            Reach out if you want to collaborate or explore an idea together.
+          </p>
+          <div class="contact-content">
+            <div class="contact-info delay-1">
+              <p>
+                <lord-icon src="./assets/icons/location.json" stroke="3" trigger="hover"></lord-icon> Sikar, Rajasthan, India
+              </p>
+              <p><lord-icon src="./assets/icons/email.json" stroke="3" trigger="hover"></lord-icon> shivam8299.sharma@gmail.com</p>
+              <p><lord-icon src="./assets/icons/call.json" stroke="3" trigger="hover"></lord-icon> +91 9983042812</p>
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/shivam-sharma-aa258a357/"
+                  target="_blank"
+                  data-label="LinkedIn"
+                  >
+                  <lord-icon
+                    src="./assets/icons/linkedin.json"
+                    stroke="3"
+                    trigger="hover"
+                  ></lord-icon>
+                </a>
+                <a
+                  href="https://github.com/shivamsharma999"
+                  target="_blank"
+                  data-label="GitHub"
+                  >
+                  <lord-icon
+                    src="./assets/icons/github.json"
+                    stroke="3"
+                    trigger="hover"
+                  ></lord-icon>
+                </a>
+                <a
+                  href="https://twitter.com/ShivamSharma959"
+                  target="_blank"
+                  data-label="Twitter"
+                  >
+                  <lord-icon
+                    src="./assets/icons/twitter.json"
+                    stroke="3"
+                    trigger="hover"
+                  ></lord-icon>
+                </a>
+              </div>
+            </div>
+            <form
+              class="contact-form fade-up delay-1"
+              id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="Subject of your message"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message
+                <lord-icon src="./assets/icons/plane.json" stroke="3" trigger="hover" target="button.btn[type='submit']"></lord-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          &copy; 2026 Shivam Sharma. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
